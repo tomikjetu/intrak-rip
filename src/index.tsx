@@ -11,8 +11,9 @@ import {
   DonateButton,
 } from "./Components/Elements";
 import ReactGA from "react-ga4";
-if (process.env.ENVIRONMENT === "production")
+if (process.env.NODE_ENV === "production")
   ReactGA.initialize("G-4EYNR0YZZK");
+
 
 export const headerHeight = "3rem";
 
