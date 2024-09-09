@@ -23,7 +23,6 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     {/*  TODO install router  */}
-    <title>Intrak STU</title>
     <main className="grid grid-rows-[auto_1fr_auto] min-h-screen">
       <header
         style={{
