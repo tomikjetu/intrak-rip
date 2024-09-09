@@ -3,11 +3,22 @@ import ReactDOM from "react-dom/client";
 import "./root.css";
 import App from "./App";
 import { CiGlobe, CiInstagram } from "react-icons/ci";
-import { SocialsWrapper, SocialHeading, SocialItem, SocialButton, DonateButton } from "./Components/Elements";
+import {
+  SocialsWrapper,
+  SocialHeading,
+  SocialItem,
+  SocialButton,
+  DonateButton,
+} from "./Components/Elements";
+import ReactGA from "react-ga4";
+if (process.env.ENVIRONMENT === "production")
+  ReactGA.initialize("G-4EYNR0YZZK");
 
 export const headerHeight = "3rem";
 
-const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
 root.render(
   <React.StrictMode>
     {/*  TODO install router  */}
